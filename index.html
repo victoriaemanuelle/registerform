@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>
+ www.dw.com/formulario/
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css" >
+    <script src="index.js"></script>
+    <script type="text/javascript">
+      function showMessage() {
+          alert("Hello friends, this is message.");
+      }
+  </script>
+  </head>
+
+
+<body>
+<div class="row">
+  <section class="section">
+   
+    <header>
+    <h3  style="color: white;">  💻 Página de Registro  💻</h3>
+
+
+      <h4  style="color: white;" >Por favor apenas se inspire 👩🏻‍💻</h4>
+    </header>
+    
+    <main>
+      <form method="POST" action="calculadora.html">
+        
+
+        <div class="form-item box-item">
+          <label>Nome</label>
+          <input type="text" name="name" title="Digite seu nome" placeholder="Nome" required/>
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i></small>
+        </div>
+
+        <div class="form-item box-item">
+          <label>Email</label>
+          <input type="text" name="email" title="Digite seu email" placeholder="Email" required/>
+         
+
+          
+         <!--  <input type="email" name="email" placeholder="Email" data-email required/> -->
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> </small>
+          <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> </small>
+        </div>
+
+        <div class="form-item box-item">
+          <div class="form-item-triple">
+            <div class="radio-label"> 
+           
+          <label>CPF</label>
+        
+          <input type="text" name="cpf" placeholder="CPF"
+          pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" \
+          title="Digite um CPF no formato válido" required />
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+        </div>
+        
+
+        <div class="form-item box-item" required>
+          <label>Celular</label>
+          <input type="text" name="phone" title="Digite seu número de celular" placeholder="Celular" data-number data-count="11" required>
+          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> </small>
+          <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> </small>
+          <small class="errorChar"><i class="fa fa-asterisk" aria-hidden="true"></i> </small>
+        </div>
+        
+        <div id="btnShowMsg"  class="form-item" class="w3-panel w3-green">
+          <!-- <a href=calculadora.html> -->
+          <button type="submit" value="Send"  style= "background-color:   rgb(78, 7, 19); color:white;" class="submit">Enviar</button>
+        <!-- </a> -->
+        </div> <!-- onsubmit="window.location.href='calculadora.html'" =" -->
+        <div><p>PREENCHIMENTO OBRIGATÓRIO</p></div>
+      </form>
+      <!-- hsla(102, 33%, 90%, 0.63) -->
+
+    </main>
+    <footer>
+      <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+          <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+      </div>
+     
+    </footer>
+    <i class="wave"></i>
+  </section>
+</div>
+</body>
+</html>

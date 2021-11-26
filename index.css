@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+ html {
+	 font-size: 10px;
+	 -webkit-tap-highlight-color: rgba(207, 101, 101, 0);
+	 box-sizing: border-box;
+}
+ *, *:before, *:after {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: inherit;
+}
+ body {
+	overflow-y: initial;
+	 overflow-x: hidden;
+
+	  margin:auto;
+    width:1024px;
+    padding:10px;
+    background-color: linear-gradient(to top,  rgb(114, 6, 24), rgb(0, 0, 0));
+    font-size:14px;
+    font-family:Verdana;
+	color:hsla(102, 33%, 90%, 0.63);
+}
+ .row {
+	 display: grid;
+	 align-items: center ;
+	 justify-content: center;
+}
+
+
+
+
+.section {
+	background-color:  linear-gradient(to top,  rgb(114, 6, 24), rgb(0, 0, 0));
+	position: flex; /* relative */
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+
+
+
+ header,  footer {
+	
+	 display: block;
+	 position: relative;
+	 z-index: 1;
+}
+main { display: grid;
+	position: relative;
+	
+	 z-index: 1;
+	 
+
+}
+ header {
+	 padding: 48px;
+}
+ @media (max-width: 440px) {
+	 header {
+		 padding: 48px 24px;
+	}
+}
+ header > h3 {
+	 font-size: 44px;
+	 font-weight: 700;
+	 margin-bottom: 8px;
+}
+ header > h4 {
+	 font-size: 22px;
+	 font-weight: 400;
+	 letter-spacing: 1px;
+}
+ main {
+	 flex: 1;
+	 padding: 0 48px;
+}
+ @media (max-width: 440px) {
+	 main {
+		 padding: 0 24px;
+	}
+}
+ footer {
+	 width: 100%;
+	 background-color: rgb(114, 6, 24);
+	 padding: 16px;
+	 align-self: center;
+	 text-align: center;
+	 margin-top: 32px;
+}
+ footer a {
+	 color:  rgb(114, 6, 24) ;
+	 font-weight: 700;
+	 text-decoration: none;
+}
+ footer a:hover {
+	 text-decoration: underline;
+}
+ form {
+	 background-color: transparent;/* remove to see only wave */
+	 height: 100%;
+	 display: flex;
+	 justify-content: center;
+	 flex-direction: column;
+}
+ .label {
+	 color:white;
+	 font-size: 16px;
+}
+ small {
+	 display: none;
+}
+ small.errorOnce {
+	 margin-top: 2px;
+}
+ .form-item input[type="text"], .form-item input[type="number"], .form-item input[type="email"] {
+	 display: block; 
+	 color: rgb(114, 6, 24);
+	 font-size: 16px;
+	 width: 100%;
+	 background-color: white;
+	 border: none;
+	 border-bottom: 1px hsla(102, 33%, 90%, 0.63);
+	 padding: 8px 0;
+	 appearance: none;
+	 outline: none;
+}
+ .form-item small {
+	letter-spacing: 1px;
+	
+}
+ .form-item b{
+	 
+		width: 120px;
+		height: 30px;
+		border: 1px solid #999;
+		font-size: 18px;
+		color: rgb(78, 7, 19);
+		background-color: #eee;
+		border-radius: 5px;
+		box-shadow: 4px 4px #ccc;
+	}
+
+ .form-item i {
+	 font-size: 12px;
+	 color: red;
+}
+ .box-item {
+	 height: 60px;
+	 margin-bottom: 16px;
+	 min-height: 17vh;
+
+	 /* Horizontal & vertical centering (*2) */
+	 
+}
+ .form-item-double {
+	 display: flex;
+}
+ .form-item-double .form-item {
+	 flex: 1 1 auto;
+}
+ .form-item-double .form-item:nth-child(1) {
+	 padding-right: 16px;
+}
+ .form-item-double .form-item:nth-child(2) {
+	 padding-left: 16px;
+}
+ .form-item-triple {
+	 display: flex;
+	 align-items: center;
+	 padding-top: 6px;
+}
+ .form-item-triple .radio-label {
+	 flex: 1 1 auto;
+	 text-align: left;
+}
+ .form-item-triple .radio-label label {
+	 display: inline-block;
+	 vertical-align: middle;
+}
+ .form-item-triple .form-item {
+	 flex: 3 1 auto;
+	 text-align: center;
+	 margin: 0;
+}
+ .form-item-triple .form-item label, .form-item-triple .form-item input[type="radio"] {
+	 display: inline-block;
+	 vertical-align: middle;
+	 margin: 0 4px;
+	 
+}
+.form-element-field{ /* selecione*/
+	width: 120px;
+    height: 30px;
+    border: 1px solid #999;
+    font-size: 18px;
+    color: rgb(114, 6, 24);
+    background-color:   hsla(102, 33%, 90%, 0.63);
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+}
+ ::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	 color: rgb(114, 6, 24);
+	 font-size: 16px;
+}
+ :-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	 color: rgb(114, 6, 24);
+	 font-size: 16px;
+	 opacity: 1;
+}
+ ::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	 color: rgb(114, 6, 24);
+	 font-size: 16px;
+	 opacity: 1;
+}
+ :-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	 color: rgb(114, 6, 24);
+	 font-size: 16px;
+}
+ ::-ms-input-placeholder {
+	/* Microsoft Edge */
+	 color:rgb(114, 6, 24);
+	 font-size: 16px;
+}
+ .submit {
+	 display: inline-block;
+	 font-size: 18px;
+	 font-weight: 700;
+	 letter-spacing: 1px;
+	 padding: 8px 48px;
+	 margin-top: 32px;
+	 border: 2px solid white;
+	 border-radius: 20px;
+	 cursor: pointer;
+	 transition: all ease 0.2s;
+}
+ .submit:hover {
+	 background-color: black;
+	 border: 2px solid  black;
+}
+ .wave {
+	 position: absolute;
+	 top: 0;
+	 left: 50%;
+	 width: 200px;
+	 height: 800px;
+	 margin-top: -55px;
+	 margin-left: -600px;
+	 background: linear-gradient(to top,  rgb(114, 6, 24), rgb(0, 0, 0));
+	 border-radius: 40%;
+	 animation: shift 35s infinite linear; /* time */
+	 z-index: 0;
+}
+
+ @keyframes shift {
+	 from {
+		 transform: rotate(20deg);
+	}
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55) /* -25% */
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1) /* -50% */
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height:130%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+
+
+
+
+
+/* For lower than 700px resolutions */
+
+
+
+
+/* for high resolution (Retina) display with background-image */
+
+
+
+
